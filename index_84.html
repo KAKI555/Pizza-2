@@ -5,8 +5,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style_84.css">
-<script src="main_84.js"></script>
+    <link rel="stylesheet" href="style_85.css">
+<script src="main_85.js"></script>
 </head>
 
 <body>
@@ -14,6 +14,7 @@
         <a class="active" href="#">Pizzeria</a>
         <div class="topnav-right">
          <a href="#viewblock">View Menu</a>
+         <a href="#addTopings">Add Menu</a>
         </div>
     </div>
 
@@ -21,17 +22,20 @@
         <div class="img_div"> 
             <img class="img-responsive" src="pizza.png">
         </div>
-        
+
         <div class="menu_div">
-            <input type="text" placeholder="Enter the Pizza name" id="pizza_name"> 
-            <br> <br>
-            
-            <!--Create a button with name Show Menu-->
-            <button id="menu_list" onclick="getmenu()">         </button>
-            
-            <!--Add the id name as display_menu to display menu items-->
-            <div id="           " style="font-weight:bold;color:rgb(248, 242, 242);"></div>     
+            <button id="menu_list" onclick="getmenu()">Show Menu</button>
+            <div id="display_menu" style="font-weight: bold;" ></div>
         </div>
+
+        <div class="menu_div" id="addTopings">
+            <input id="add_item" placeholder="RECOMMEND A PIZZA!"> <br><br>
+            <!--Add the code for button in the below button tag. --> 
+            <!-- Name the button as: Add Pizza Suggestion -->
+			<button class= "btn btn-success" onclick="add_suggestion()">Add Pizza Suggestion</button><br><br>
+        </div>
+		<!--Give the appropriate id name as display_menu -->
+        <div class="menu_div"><div id="display_menu"></div>
     </div>
 
 </body></html>
